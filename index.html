@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Care Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Bidan Bersama Cilegon</div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">FAQ</a>
+                <button class="cta-button">Reservasi</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel">
+        <div class="carousel-content">
+            <h1>Perawatan Terbaik untuk Ibu dan Bayi</h1>
+            <p>Melayani ibu dan bayi dengan sepenuh hati</p>
+        </div>
+        <div class="carousel-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2 class="section-title">Layanan Kami</h2>
+        <p class="section-subtitle">Kami menyediakan berbagai layanan profesional untuk kesehatan dan kenyamanan bayi Anda</p>
+        
+        <div class="services-grid">
+            <!-- Baby Spa Card -->
+            <div class="service-card baby-spa">
+                <div class="card-background"></div>
+                <div class="card-overlay">
+                    <div>
+                        <h3>Baby Spa</h3>
+                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Terapi relaksasi dan stimulasi untuk perkembangan optimal bayi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doula Card -->
+            <div class="service-card doula">
+                <div class="card-background"></div>
+                <div class="card-overlay">
+                    <div>
+                        <h3>Doula Service</h3>
+                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Pendampingan profesional selama kehamilan, persalinan, dan masa nifas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vaccine Card -->
+            <div class="service-card vaccine">
+                <div class="card-background"></div>
+                <div class="card-overlay">
+                    <div>
+                        <h3>Vaksinasi</h3>
+                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Program imunisasi lengkap sesuai jadwal kesehatan bayi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple carousel dots functionality
+        const dots = document.querySelectorAll('.dot');
+        const carousel = document.querySelector('.hero-carousel');
+        
+        const backgrounds = [
+            'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            'linear-gradient(135deg, #ff6b9d 0%, #4ecdc4 100%)',
+            'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
+        ];
+        
+        const titles = [
+            'Perawatan Terbaik untuk Si Kecil',
+            'Layanan Profesional & Terpercaya',
+            'Kesehatan Bayi adalah Prioritas Kami'
+        ];
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                // Remove active class from all dots
+                dots.forEach(d => d.classList.remove('active'));
+                // Add active class to clicked dot
+                dot.classList.add('active');
+                
+                // Change carousel background
+                carousel.style.background = backgrounds[index];
+                
+                // Change title
+                document.querySelector('.carousel-content h1').textContent = titles[index];
+            });
+        });
+
+        // Auto-rotate carousel (optional)
+        let currentSlide = 0;
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % 3;
+            dots[currentSlide].click();
+        }, 5000);
+    </script>
+</body>
+</html>
