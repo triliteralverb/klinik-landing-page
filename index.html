@@ -1,77 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baby Care Services</title>
+    <title>Bidan Bersama — Klinik Kebidanan Cilegon</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Bidan Bersama Cilegon</div>
-            <div class="nav-menu">
-                <a href="#" class="nav-link">About Us</a>
-                <a href="#" class="nav-link">FAQ</a>
-                <button class="cta-button">Reservasi</button>
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">Bidan Bersama</a>
             </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Beranda</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Hero Carousel -->
-    <section class="hero-carousel">
-        <div class="carousel-content">
-            <h1>Perawatan Terbaik untuk Ibu dan Bayi</h1>
-            <p>Melayani ibu dan bayi dengan sepenuh hati</p>
-        </div>
-        <div class="carousel-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bidan Bersama</h1>
+                <p class="subtitle">Klinik Kebidanan Bersertifikat · Cilegon, Banten</p>
+                <p class="hero-text">Menemani setiap langkah perjalanan ibu dan buah hati — dari kehamilan, persalinan, hingga tumbuh kembang bayi yang sehat dan penuh kasih.</p>
+                <a href="https://wa.me/6281906271313" class="btn btn-primary" target="_blank">Hubungi Kami</a>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services-section">
-        <h2 class="section-title">Layanan Kami</h2>
-        <p class="section-subtitle">Kami menyediakan berbagai layanan profesional untuk kesehatan dan kenyamanan bayi Anda</p>
-        
-        <div class="services-grid">
-            <!-- Baby Spa Card -->
-            <div class="service-card baby-spa">
-                <div class="card-background"></div>
-                <div class="card-overlay">
-                    <div>
-                        <h3>Baby Spa</h3>
-                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Terapi relaksasi dan stimulasi untuk perkembangan optimal bayi</p>
-                    </div>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <p class="section-intro">Pelayanan komprehensif untuk ibu hamil, melahirkan, dan bayi sehat</p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🤰</div>
+                    <h3>Pendampingan Ibu Hamil, Melahirkan & Menyusui</h3>
+                    <p>Pemeriksaan kehamilan berkala, bimbingan persalinan yang aman dan nyaman, serta konseling laktasi untuk mendukung proses menyusui yang optimal.</p>
+                    <a href="melahirkan-menyusui.html" class="btn btn-small">Pelajari Lebih Lanjut →</a>
                 </div>
-            </div>
 
-            <!-- Doula Card -->
-            <div class="service-card doula">
-                <div class="card-background"></div>
-                <div class="card-overlay">
-                    <div>
-                        <h3>Doula Service</h3>
-                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Pendampingan profesional selama kehamilan, persalinan, dan masa nifas</p>
-                    </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">💉</div>
+                    <h3>Imunisasi Bayi</h3>
+                    <p>Jadwal imunisasi lengkap sesuai program nasional untuk melindungi buah hati dari penyakit berbahaya dan memastikan tumbuh kembang yang optimal.</p>
+                    <a href="imunisasi.html" class="btn btn-small">Pelajari Lebih Lanjut →</a>
                 </div>
-            </div>
 
-            <!-- Vaccine Card -->
-            <div class="service-card vaccine">
-                <div class="card-background"></div>
-                <div class="card-overlay">
-                    <div>
-                        <h3>Vaksinasi</h3>
-                        <p style="font-size: 16px; font-weight: 400; margin-top: 10px;">Program imunisasi lengkap sesuai jadwal kesehatan bayi</p>
-                    </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">👶</div>
+                    <h3>Mom & Baby Care</h3>
+                    <p>Perawatan pasca melahirkan untuk ibu dan bayi, termasuk pijat bayi, perawatan tali pusat, serta edukasi pola asuh dan nutrisi untuk keluarga sehat.</p>
+                    <a href="mom-baby-care.html" class="btn btn-small">Pelajari Lebih Lanjut →</a>
+                </div>
+
+                <!-- Service 4 - NEW -->
+                <div class="service-card">
+                    <div class="service-icon">🔬</div>
+                    <h3>Prosedur & Tes Kesehatan Reproduksi</h3>
+                    <p>IVA Test dan Vaginal Toilet untuk deteksi dini kanker serviks dan perawatan kesehatan reproduksi dengan bidan bersertifikat kami.</p>
+                    <a href="prosedurtes.html" class="btn btn-small">Pelajari Lebih Lanjut →</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p class="about-text">Bidan Bersama adalah klinik kebidanan terpercaya yang hadir dengan sepenuh hati untuk ibu dan bayi di Cilegon, Banten. Kami berkomitmen memberikan layanan kesehatan berkualitas tinggi dengan pendekatan yang hangat dan profesional.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📍 Alamat</h3>
+                    <p>PCI Blok D 90 No. 8<br>Cibeber, Cilegon<br>Banten 42423</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Kontak</h3>
+                    <p><a href="https://wa.me/6281906271313" target="_blank">081906271313</a><br>
+                    <em>Hubungi via WhatsApp</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bidan Bersama · Cilegon, Banten</p>
+            <p class="footer-secondary">Klinik Kebidanan Bersertifikat</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
