@@ -1,40 +1,55 @@
-// Ambil Element DOM
-const dots = document.querySelectorAll('.dot');  // Semua dot carousel
-const carousel = document.querySelector('.hero-carousel');  // Container carousel
+// Mobile Navigation Toggle
+const navToggle = document.getElementById('navToggle');
+const navMenu = document.getElementById('navMenu');
 
-// Carousel Data
-const backgrounds = [
-    'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',  // Slide 1
-    'linear-gradient(135deg, #ff6b9d 0%, #4ecdc4 100%)',  // Slide 2  
-    'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'   // Slide 3
-];
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
 
-const titles = [
-    'Perawatan Terbaik untuk Si Kecil',      // Title slide 1
-    'Layanan Profesional & Terpercaya',      // Title slide 2
-    'Kesehatan Bayi adalah Prioritas Kami'   // Title slide 3
-];
-
-// Event Listener untuk Dots
-dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-        // Remove active dari semua dots
-        dots.forEach(d => d.classList.remove('active'));
-        
-        // Add active ke dot yang diklik
-        dot.classList.add('active');
-        
-        // Ganti background carousel
-        carousel.style.background = backgrounds[index];
-        
-        // Ganti title text
-        document.querySelector('.carousel-content h1').textContent = titles[index];
+// Close menu when a link is clicked
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
     });
 });
 
-// Auto-Rotate Carousel
-let currentSlide = 0;
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % 3;  // Loop 0,1,2,0,1,2...
-    dots[currentSlide].click();             // Simulate click dot
-}, 5000);  // Ganti slide setiap 5 detik
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    });
+});
+
+// Add scroll animation to service cards
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe all service cards
+document.querySelectorAll('.service-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+});

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melahirkan & Menyusui — Bidan Bersama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Bidan Bersama</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="index.html#services" class="nav-link">Layanan</a></li>
+                <li><a href="#" class="nav-link">Spesialisasi</a>
+                    <ul class="submenu">
+                        <li><a href="melahirkan-menyusui.html">Melahirkan & Menyusui</a></li>
+                        <li><a href="imunisasi.html">Imunisasi Bayi</a></li>
+                        <li><a href="mom-baby-care.html">Mom & Baby Care</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#contact" class="nav-link">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <a href="index.html">Beranda</a> / 
+            <a href="index.html#services">Layanan</a> / 
+            <span>Melahirkan & Menyusui</span>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Pelayanan Melahirkan & Menyusui</h1>
+            <p class="subtitle">Pendampingan lengkap untuk kehamilan, persalinan, dan menyusui yang optimal</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="service-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-menu">
+                        <h3>Dalam Halaman Ini</h3>
+                        <ul>
+                            <li><a href="#pendahuluan">Pendahuluan</a></li>
+                            <li><a href="#kehamilan">Pemeriksaan Kehamilan</a></li>
+                            <li><a href="#melahirkan">Pendampingan Melahirkan</a></li>
+                            <li><a href="#menyusui">Konseling Menyusui</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-contact">
+                        <h4>Butuh Bantuan?</h4>
+                        <p>Hubungi kami sekarang untuk konsultasi gratis</p>
+                        <a href="https://wa.me/6281906271313" class="btn btn-primary" target="_blank">Chat WhatsApp</a>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="main-content">
+                    <!-- Section 1: Pendahuluan -->
+                    <section id="pendahuluan" class="content-section">
+                        <h2>Tentang Layanan Kami</h2>
+                        <p>Kami menyediakan pelayanan komprehensif untuk mendampingi ibu hamil dari awal kehamilan hingga pasca menyusui. Tim bidan profesional kami siap memberikan dukungan penuh dengan pendekatan yang hangat dan berbasis bukti ilmiah.</p>
+                        <div class="highlight-box">
+                            <h3>✨ Komitmen Kami</h3>
+                            <ul>
+                                <li>Pelayanan dengan hati dan profesional</li>
+                                <li>Berdasarkan standar kesehatan nasional</li>
+                                <li>Pendampingan 24/7 saat persalinan</li>
+                                <li>Edukasi untuk ibu dan keluarga</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Section 2: Pemeriksaan Kehamilan -->
+                    <section id="kehamilan" class="content-section">
+                        <h2>Pemeriksaan Kehamilan Berkala</h2>
+                        <p>Pemeriksaan kehamilan rutin sangat penting untuk memantau kesehatan ibu dan perkembangan janin. Kami menawarkan:</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-number">1</div>
+                                <div class="feature-content">
+                                    <h4>Pemeriksaan Trimester 1</h4>
+                                    <p>Pemeriksaan awal kehamilan untuk memastikan kehamilan sehat dan mendeteksi dini kemungkinan risiko.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-number">2</div>
+                                <div class="feature-content">
+                                    <h4>Pemeriksaan Trimester 2</h4>
+                                    <p>Monitoring perkembangan janin dan status kesehatan ibu dengan pemeriksaan menyeluruh.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-number">3</div>
+                                <div class="feature-content">
+                                    <h4>Pemeriksaan Trimester 3 & Persiapan Persalinan</h4>
+                                    <p>Persiapan matang untuk persalinan dan edukasi tentang tanda-tanda persalinan yang perlu diwaspadai.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>📋 Yang Kami Lakukan Saat Pemeriksaan:</h4>
+                            <ul>
+                                <li>Pengukuran tekanan darah dan berat badan</li>
+                                <li>Pemeriksaan fisik menyeluruh</li>
+                                <li>USG kehamilan (jika diperlukan)</li>
+                                <li>Tes darah dan tes urin</li>
+                                <li>Konseling gizi dan kesehatan kehamilan</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Section 3: Pendampingan Melahirkan -->
+                    <section id="melahirkan" class="content-section">
+                        <h2>Pendampingan Persalinan</h2>
+                        <p>Kami memahami bahwa persalinan adalah momen yang sangat penting bagi ibu dan keluarga. Tim kami siap mendampingi dengan penuh dedikasi.</p>
+
+                        <div class="services-comparison">
+                            <div class="comparison-card">
+                                <h4>Persalinan Normal</h4>
+                                <ul>
+                                    <li>✓ Pendampingan berkelanjutan</li>
+                                    <li>✓ Teknik relaksasi dan breathing</li>
+                                    <li>✓ Posisi melahirkan yang nyaman</li>
+                                    <li>✓ Dukungan emosional</li>
+                                </ul>
+                            </div>
+                            <div class="comparison-card">
+                                <h4>Penanganan Komplikasi</h4>
+                                <ul>
+                                    <li>✓ Kerjasama dengan dokter kandungan</li>
+                                    <li>✓ Siap dengan alat medis lengkap</li>
+                                    <li>✓ Rujukan ke rumah sakit jika perlu</li>
+                                    <li>✓ Tindakan cepat dan tepat</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <h4>💙 Kehadiran Pendamping:</h4>
+                            <p>Kami memungkinkan kehadiran suami/keluarga sebagai pendamping untuk memberikan dukungan moral kepada ibu selama proses persalinan.</p>
+                        </div>
+                    </section>
+
+                    <!-- Section 4: Konseling Menyusui -->
+                    <section id="menyusui" class="content-section">
+                        <h2>Konseling & Dukungan Menyusui</h2>
+                        <p>Menyusui adalah proses alami yang kadang membutuhkan bimbingan. Kami menyediakan konseling lengkap untuk ibu menyusui.</p>
+
+                        <div class="info-box highlight">
+                            <h4>🤱 Topik Konseling Menyusui:</h4>
+                            <ul>
+                                <li>Teknik menyusui yang benar</li>
+                                <li>Manajemen ASI dan penyimpanan</li>
+                                <li>Mengatasi masalah menyusui (puting nyeri, tersumbat, dll)</li>
+                                <li>Nutrisi ibu menyusui</li>
+                                <li>ASI eksklusif dan MP-ASI</li>
+                                <li>Dukungan psikologis pasca melahirkan</li>
+                            </ul>
+                        </div>
+
+                        <p>Tim kami akan membimbing ibu hingga menyusui berjalan optimal dan lancar. Kami siap membantu kapan saja Anda membutuhkan.</p>
+                    </section>
+
+                    <!-- Section 5: FAQ -->
+                    <section id="faq" class="content-section">
+                        <h2>Pertanyaan yang Sering Diajukan</h2>
+                        
+                        <div class="faq-item">
+                            <h4>Berapa biaya pemeriksaan kehamilan?</h4>
+                            <p>Biaya pemeriksaan kehamilan bervariasi tergantung paket yang Anda pilih. Silakan hubungi kami untuk mendapatkan rincian biaya yang jelas dan transparan.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Apakah keluarga bisa mendampingi saat persalinan?</h4>
+                            <p>Tentu saja! Kami sangat menyarankan kehadiran suami atau anggota keluarga terdekat untuk memberikan dukungan moral kepada ibu.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Bagaimana jika ada komplikasi saat persalinan?</h4>
+                            <p>Kami bekerja sama dengan rumah sakit terdekat dan dokter kandungan untuk penanganan komplikasi. Keselamatan ibu dan bayi adalah prioritas utama kami.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Berapa lama sesi konseling menyusui?</h4>
+                            <p>Durasi konseling tergantung kebutuhan ibu. Biasanya berkisar 30-60 menit untuk memberikan bimbingan yang komprehensif.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>Apakah ada layanan follow-up pasca melahirkan?</h4>
+                            <p>Ya, kami menyediakan kunjungan follow-up untuk memantau kesehatan ibu dan bayi, serta memberikan dukungan berkelanjutan.</p>
+                        </div>
+                    </section>
+
+                    <!-- CTA Section -->
+                    <section class="content-section cta-section">
+                        <h2>Siap Memulai Perjalanan Kehamilan Sehat?</h2>
+                        <p>Hubungi kami hari ini untuk membuat janji temu atau konsultasi gratis dengan bidan profesional kami.</p>
+                        <a href="https://wa.me/6281906271313" class="btn btn-primary btn-large" target="_blank">Hubungi Kami Sekarang</a>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bidan Bersama · Cilegon, Banten</p>
+            <p class="footer-secondary">Klinik Kebidanan Bersertifikat</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
