@@ -88,7 +88,7 @@ body {
 
 .hero-bg {
     background: linear-gradient(135deg, rgba(255, 107, 157, 0.85) 0%, rgba(196, 69, 105, 0.85) 100%),
-                url('./images/hero-bg.jpg') center/cover no-repeat;
+                url('./images/hero-midwife.jpg') center/cover no-repeat;
     color: var(--white);
     padding: 120px 20px;
     text-align: center;
